@@ -661,13 +661,14 @@ img {
 
 .link-card:hover, 
 .link-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
 }
 
 .link .description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
+
 
 /* Модальное окно */
 
@@ -692,7 +693,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
@@ -710,5 +711,6 @@ img {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 
 
