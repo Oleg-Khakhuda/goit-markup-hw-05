@@ -140,7 +140,7 @@ img {
   color: var(--accent-color);
 }
 
-/* .site-nav-list .item {
+.site-nav-list .item {
   position: relative;
 }
 
@@ -153,7 +153,7 @@ img {
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
-} */
+}
 
 .nav-link {
   display: flex;
