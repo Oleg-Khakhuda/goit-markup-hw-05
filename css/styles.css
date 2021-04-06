@@ -16,6 +16,8 @@
 
   --main-font-size: 14px;
   --secondary-font-size: 16px;
+
+  --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -127,6 +129,8 @@ img {
   line-height: 1.14;
   list-style: none;
   letter-spacing: 0.02em;
+
+  transition: var(--main-transition);
 }
 
 .site-nav-list .link:hover,
@@ -159,6 +163,8 @@ img {
   display: flex;
   margin-left: auto;
   list-style: none;
+
+  
 }
 
 .nav-link .item + .item {
@@ -174,6 +180,8 @@ img {
   
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: var(--main-transition);
 }
 
 .icon-nav {
@@ -239,6 +247,8 @@ img {
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: var(--main-transition);
 }
 
 .hero .button:hover,
@@ -391,7 +401,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%; 
-  fill: #AFB1B8;; 
+  fill: #AFB1B8;
+  transition: var(--main-transition);
 }
 
 
@@ -401,12 +412,12 @@ img {
 
 .social-link:hover .icon,
 .social-link:focus .icon {
-  fill: var(--primary-write-color);
+  fill: var(--primary-write-color); 
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color); 
 }
 
 .team .title {
@@ -461,6 +472,8 @@ img {
   fill: #AFB1B8; 
   margin-left: 30px;
   margin-top: 30px;
+
+  transition: var(--main-transition);
 }
 
 .list-customers .link:hover,
@@ -507,6 +520,8 @@ img {
   list-style: none;
   color: var(--complementary-color);
   line-height: 1.7;
+
+  transition: var(--main-transition);
 }
 
 .footer .link:hover,
@@ -546,6 +561,8 @@ img {
   height: 44px;
   border-radius: 50%; 
   fill: #FFFFFF;
+
+  transition: var(--main-transition);
 }
 
 .footer-link:hover,
@@ -578,8 +595,9 @@ img {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 50px; 
+  margin-bottom: 50px;  
 }
+
 
 .list-projects .item:not(:last-child) {
   margin-right: 8px;
@@ -589,7 +607,7 @@ img {
 .list-projects .primary:focus {
   color: var(--primary-write-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
 }
 
 .button.primary.all {
@@ -610,6 +628,8 @@ img {
   padding: 10px 32px;
   border: transparent;
   border-radius: 4px;
+
+  transition: var(--main-transition);
 }
 
 .site-projects {
@@ -643,6 +663,7 @@ img {
   max-width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .site-projects .link:nth-child(3n) {
@@ -653,7 +674,7 @@ img {
   margin-bottom: 0;
 }
 
-.card-thumb {
+.overlay {
   position: relative;
 
   overflow: hidden;
@@ -672,27 +693,25 @@ img {
   transition: 250ms ease;
 }
 
-.card-thumb:hover .text-card {
-  transform: translatey(0);
-}
-
 .link-card:hover .text-card {
-  opacity: 1;
+  opacity: 1;  
+  transform: translatey(0);
 }
 
 .link-card {
   display: block;
   text-decoration: none;
+  transition: var(--main-transition);
 }
 
 .link-card:hover, 
 .link-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+
 }
 
 .link .description {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  padding: 20px 24px;  
 }
 
 
@@ -705,13 +724,13 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1; 
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
-  
+  visibility: hidden; 
 }
 
 .modal {
@@ -732,13 +751,9 @@ img {
   right: 8px;
   width: 30px;
   height: 30px;
-  background-image: url(../images/icons/close.svg);  
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
 }
 
 
