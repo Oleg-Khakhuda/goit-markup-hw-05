@@ -130,7 +130,7 @@ img {
   list-style: none;
   letter-spacing: 0.02em;
 
-  transition: var(--main-transition);
+  transition: color var(--main-transition);
 }
 
 .site-nav-list .link:hover,
@@ -181,7 +181,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: var(--main-transition);
+  transition: color var(--main-transition);
 }
 
 .icon-nav {
@@ -248,7 +248,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  transition: var(--main-transition);
+  transition: background-color var(--main-transition);
 }
 
 .hero .button:hover,
@@ -402,7 +402,12 @@ img {
   height: 44px;
   border-radius: 50%; 
   fill: #AFB1B8;
-  transition: var(--main-transition);
+  
+  transition: background-color var(--main-transition);
+}
+
+.social-link .icon {
+  transition: fill var(--main-transition);
 }
 
 
@@ -473,16 +478,12 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 
-  transition: var(--main-transition);
+  transition: fill var(--main-transition), border-color var(--main-transition);
 }
 
 .list-customers .link:hover,
 .list-customers .link:focus {
   fill: var(--accent-color);  
-}
-
-.list-customers .link:hover,
-.list-customers .link:focus {
   border-color: var(--accent-color);
 }
 
@@ -521,7 +522,7 @@ img {
   color: var(--complementary-color);
   line-height: 1.7;
 
-  transition: var(--main-transition);
+  transition: color var(--main-transition);
 }
 
 .footer .link:hover,
@@ -562,7 +563,7 @@ img {
   border-radius: 50%; 
   fill: #FFFFFF;
 
-  transition: var(--main-transition);
+  transition: background-color var(--main-transition);
 }
 
 .footer-link:hover,
@@ -629,7 +630,7 @@ img {
   border: transparent;
   border-radius: 4px;
 
-  transition: var(--main-transition);
+  transition: color var(--main-transition), background-color var(--main-transition), box-shadow var(--main-transition);
 }
 
 .site-projects {
@@ -690,7 +691,8 @@ img {
   opacity: 0;
 
   transform: translatey(100%);
-  transition: 250ms ease;
+ 
+  transition: transform var(--main-transition), opacity var(--main-transition);
 }
 
 .link-card:hover .text-card {
@@ -700,8 +702,8 @@ img {
 
 .link-card {
   display: block;
-  text-decoration: none;
-  transition: var(--main-transition);
+  text-decoration: none;  
+  transition: box-shadow var(--main-transition);
 }
 
 .link-card:hover, 
@@ -725,6 +727,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1; 
+
+  transition: opacity var(--main-transition);
 }
 
 .backdrop.is-hidden {
@@ -733,16 +737,25 @@ img {
   visibility: hidden; 
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.15);
+  /* opacity: 0; */
+}
+
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  
   width: 528px;
   height: 581px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--main-transition);
+   
 }
 
 .modal-close {
@@ -755,6 +768,4 @@ img {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-
-
+  
