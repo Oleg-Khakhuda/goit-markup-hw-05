@@ -697,7 +697,8 @@ img {
   transition: transform var(--main-transition), opacity var(--main-transition);
 }
 
-.link-card:hover .text-card {
+.link-card:hover .text-card,
+.link-card:focus .text-card {
   opacity: 1;  
   transform: translatey(0);
 }
