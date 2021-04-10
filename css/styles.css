@@ -344,16 +344,17 @@ img {
 }
 
 .text-image {
-  position: absolute;
-  
+  position: absolute; 
+  display: flex;
   background-color: rgba(47, 48, 58, 0.8);
-  
   bottom: 0;
-  padding: 27px 82px 27px 82px;
+  width: 100%;
+  height: 70px;
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: 1.14;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   color: #FFFFFF;
 }
