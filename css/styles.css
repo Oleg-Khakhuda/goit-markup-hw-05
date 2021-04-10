@@ -339,13 +339,15 @@ img {
   margin-right: 30px;
 }
 
-.text-box {
+.work-list .box {
   position: relative;
 }
 
 .text-image {
   position: absolute;
+  
   background-color: rgba(47, 48, 58, 0.8);
+  
   bottom: 0;
   padding: 27px 82px 27px 82px;
   font-weight: var(--bold-font-weight);
