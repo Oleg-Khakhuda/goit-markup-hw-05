@@ -406,13 +406,8 @@ img {
   border-radius: 50%; 
   fill: #AFB1B8;
   
-  transition: background-color var(--main-transition);
+  transition: background-color var(--main-transition), fill var(--main-transition);
 }
-
-.social-link .icon {
-  transition: fill var(--main-transition);
-}
-
 
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
